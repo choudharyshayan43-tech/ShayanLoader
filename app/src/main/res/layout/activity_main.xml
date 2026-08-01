@@ -2,61 +2,62 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="#070A0F">
+    android:background="#070A0F"
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:padding="24dp">
+        android:padding="22dp">
 
         <Space
             android:layout_width="1dp"
-            android:layout_height="60dp"/>
+            android:layout_height="42dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SHAYAN"
             android:textColor="#00FF88"
-            android:textStyle="bold"
             android:textSize="18sp"
-            android:letterSpacing="0.25"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="PUBG LAUNCHER"
-            android:textColor="#FFFFFF"
             android:textStyle="bold"
-            android:textSize="32sp"/>
+            android:letterSpacing="0.30" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Fast • Clean • Secure"
+            android:text="PUBG TOOL"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Launcher • Guides • Floating Menu"
             android:textColor="#8A93A3"
-            android:textSize="15sp"/>
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="38dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/panel_background"
             android:orientation="vertical"
-            android:padding="22dp"
-            android:background="@drawable/panel_background">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="GAME STATUS"
                 android:textColor="#00FF88"
+                android:textSize="13sp"
                 android:textStyle="bold"
-                android:textSize="13sp"/>
+                android:letterSpacing="0.15" />
 
             <TextView
                 android:id="@+id/txtGameStatus"
@@ -65,48 +66,192 @@
                 android:layout_marginTop="12dp"
                 android:text="Checking PUBG Mobile..."
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="7dp"
                 android:text="Global Version • com.tencent.ig"
                 android:textColor="#8A93A3"
-                android:textSize="13sp"/>
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/btnLaunch"
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#00FF88"
                 android:text="LAUNCH PUBG MOBILE"
                 android:textColor="#07110B"
-                android:textStyle="bold"
                 android:textSize="16sp"
-                android:backgroundTint="#00FF88"/>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btnOpenMenu"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#202834"
                 android:text="OPEN FLOATING MENU"
                 android:textColor="#00FF88"
-                android:textStyle="bold"
                 android:textSize="15sp"
-                android:backgroundTint="#202834"/>
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="GAME GUIDES"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/panel_background"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SENSITIVITY"
+                android:textColor="#00FF88"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Camera, ADS, Gyroscope aur scope sensitivity presets."
+                android:textColor="#AAB2C0"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnSensitivity"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#273244"
+                android:text="OPEN SENSITIVITY GUIDE"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/panel_background"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRAPHICS"
+                android:textColor="#00FF88"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Smooth, Balanced, HD, HDR aur FPS settings guide."
+                android:textColor="#AAB2C0"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGraphics"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#273244"
+                android:text="OPEN GRAPHICS GUIDE"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/panel_background"
+            android:orientation="horizontal"
+            android:padding="18dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VERSION"
+                    android:textColor="#7D8797"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="2.0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEVELOPER"
+                    android:textColor="#7D8797"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="SHAYAN"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="36dp"
-            android:text="DEVELOPED BY SHAYAN"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="22dp"
+            android:text="This app does not modify PUBG game files."
             android:textColor="#596273"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
     </LinearLayout>
 

@@ -21,6 +21,14 @@
             android:exported="false"/>
 
         <activity
+            android:name=".SensitivityActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".GraphicsActivity"
+            android:exported="false"/>
+
+        <activity
             android:name=".SplashActivity"
             android:exported="true">
 

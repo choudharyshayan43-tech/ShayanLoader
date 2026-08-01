@@ -20,6 +20,8 @@ public class MainActivity extends Activity {
     private TextView txtGameStatus;
     private Button btnLaunch;
     private Button btnOpenMenu;
+    private Button btnSensitivity;
+    private Button btnGraphics;
 
     private boolean waitingForOverlayPermission = false;
 
@@ -31,12 +33,29 @@ public class MainActivity extends Activity {
         txtGameStatus = findViewById(R.id.txtGameStatus);
         btnLaunch = findViewById(R.id.btnLaunch);
         btnOpenMenu = findViewById(R.id.btnOpenMenu);
+        btnSensitivity = findViewById(R.id.btnSensitivity);
+        btnGraphics = findViewById(R.id.btnGraphics);
 
         updateGameStatus();
 
         btnLaunch.setOnClickListener(v -> launchPubg());
-
         btnOpenMenu.setOnClickListener(v -> openFloatingMenu());
+
+        btnSensitivity.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    SensitivityActivity.class
+            );
+            startActivity(intent);
+        });
+
+        btnGraphics.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    GraphicsActivity.class
+            );
+            startActivity(intent);
+        });
     }
 
     private void openFloatingMenu() {
@@ -47,7 +66,7 @@ public class MainActivity extends Activity {
 
             Toast.makeText(
                     this,
-                    "Shayan Loader ko Display over other apps permission allow karo",
+                    "Display over other apps permission allow karo",
                     Toast.LENGTH_LONG
             ).show();
 
@@ -69,7 +88,9 @@ public class MainActivity extends Activity {
                 != PackageManager.PERMISSION_GRANTED) {
 
             requestPermissions(
-                    new String[]{Manifest.permission.POST_NOTIFICATIONS},
+                    new String[]{
+                            Manifest.permission.POST_NOTIFICATIONS
+                    },
                     NOTIFICATION_PERMISSION_CODE
             );
         }
@@ -117,7 +138,8 @@ public class MainActivity extends Activity {
 
     private void updateGameStatus() {
         Intent launchIntent =
-                getPackageManager().getLaunchIntentForPackage(PUBG_PACKAGE);
+                getPackageManager()
+                        .getLaunchIntentForPackage(PUBG_PACKAGE);
 
         if (launchIntent != null) {
             txtGameStatus.setText("PUBG MOBILE DETECTED");
@@ -132,10 +154,13 @@ public class MainActivity extends Activity {
 
     private void launchPubg() {
         Intent launchIntent =
-                getPackageManager().getLaunchIntentForPackage(PUBG_PACKAGE);
+                getPackageManager()
+                        .getLaunchIntentForPackage(PUBG_PACKAGE);
 
         if (launchIntent != null) {
-            launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            launchIntent.addFlags(
+                    Intent.FLAG_ACTIVITY_NEW_TASK
+            );
             startActivity(launchIntent);
         } else {
             Toast.makeText(
@@ -148,3 +173,4 @@ public class MainActivity extends Activity {
         }
     }
 }
+
