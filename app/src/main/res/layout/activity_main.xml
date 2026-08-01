@@ -78,7 +78,15 @@
                 android:textSize="13sp"/>
 
             <Button
-                android:id="@+id/btnLaunch"
+                android:id="@+id/btnOpenMenu"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
+                android:text="OPEN FLOATING MENU"
+                android:textColor="#00FF88"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="#202834"/>
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_marginTop="28dp"
