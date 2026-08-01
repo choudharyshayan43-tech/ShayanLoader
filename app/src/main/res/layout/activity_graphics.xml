@@ -135,3 +135,27 @@
                 android:textColor="#00FF88"
                 android:textSize="14sp"
                 android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="7dp"
+                android:text="Use Smooth graphics with the highest frame-rate option your device supports. Lower graphics usually give more stable FPS."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="This guide does not unlock unsupported graphics or modify game files."
+            android:textColor="#596273"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>
