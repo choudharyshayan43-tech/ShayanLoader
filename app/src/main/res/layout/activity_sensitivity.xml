@@ -2,79 +2,105 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#070A0F"
-    android:fillViewport="true">
+    android:background="#070A0F">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="22dp">
+        android:padding="20dp">
 
         <TextView
-            android:id="@+id/btnBackSensitivity"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:gravity="center"
-            android:paddingHorizontal="14dp"
-            android:text="←  BACK"
+            android:layout_height="wrap_content"
+            android:text="Sensitivity Guide"
             android:textColor="#00FF88"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textSize="28sp"
+            android:textStyle="bold"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="SENSITIVITY GUIDE"
+            android:text="Camera"
             android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Recommended starting values — adjust according to your device and play style."
-            android:textColor="#8A93A3"
-            android:textSize="14sp" />
-
-        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:background="@drawable/panel_background"
-            android:orientation="vertical"
-            android:padding="18dp">
+            android:text="TPP No Scope : 120%"
+            android:textColor="#CCCCCC"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CAMERA SENSITIVITY"
-                android:textColor="#00FF88"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
-                android:lineSpacingExtra="7dp"
-                android:text="TPP No Scope          120%&#10;FPP No Scope          110%&#10;Red Dot / Holo           45%&#10;2x Scope                  35%&#10;3x Scope                  24%&#10;4x Scope                  20%&#10;6x Scope                  12%&#10;8x Scope                  10%"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
-            android:background="@drawable/panel_background"
-            android:orientation="vertical"
-            android:padding="18dp">
+            android:text="FPP No Scope : 100%"
+            android:textColor="#CCCCCC"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ADS"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red Dot : 60%"
+            android:textColor="#CCCCCC"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2x Scope : 30%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3x Scope : 20%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4x Scope : 15%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Gyroscope"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red Dot : 300%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2x Scope : 300%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3x Scope : 240%"
+            android:textColor="#CCCCCC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4x Scope : 200%"
+            android:textColor="#CCCCCC"/>
+
+    </LinearLayout>
+
+</ScrollView>
