@@ -2,22 +2,31 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <queries>
-        <package android:name="com.tencent.ig" />
+        <package android:name="com.tencent.ig"/>
     </queries>
 
     <application
         android:allowBackup="true"
-        android:label="PUBG Loader"
-        android:theme="@style/AppTheme">
+        android:label="Shayan Loader"
+        android:theme="@android:style/Theme.Material.NoActionBar"
+        android:usesCleartextTraffic="false">
 
         <activity
             android:name=".MainActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
+
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
+
